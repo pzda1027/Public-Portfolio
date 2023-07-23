@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a019f9ccc3a3896cf11e7e2646fa6292 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a019f9ccc3a3896cf11e7e2646fa6292" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a019f9ccc3a3896cf11e7e2646fa6292 = L.map(
+                "map_a019f9ccc3a3896cf11e7e2646fa6292",
+                {
+                    center: [51.0, -3.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb1188fcfb9d131eb4c86c765070435a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+            var heat_map_800b6aa8b71315260d371c0ff8584dfe = L.heatLayer(
+                [[51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.984659, -4.2882430000000005], [51.507664, -3.253806], [51.507664, -3.253806], [51.507664, -3.253806], [51.507664, -3.253806], [51.507664, -3.253806], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.520959000000005, -3.244094], [51.8493565, -5.0835871], [51.8493565, -5.0835871], [51.8493565, -5.0835871], [51.8493565, -5.0835871], [51.8493565, -5.0835871], [51.8493565, -5.0835871], [51.3424655, -0.27534050000000004], [51.3424655, -0.27534050000000004]],
+                {"blur": 20, "maxZoom": 1, "minOpacity": 0.2, "radius": 25}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+            var marker_1b1e1abe9616f05cc9ee45b22d711ca6 = L.marker(
+                [51.984659, -4.2882430000000005],
+                {}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+        var popup_c5e6b2562f6068a895ea3e83439f49ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11418d0a8fb4f7465139fe9635dc2787 = $(`<div id="html_11418d0a8fb4f7465139fe9635dc2787" style="width: 100.0%; height: 100.0%;">'Eurasian Blackbird' 'European Robin' 'Eurasian Blue Tit' 'Great Tit'  'Eurasian Blackcap' 'Eurasian Wren' 'Common Chaffinch' 'Gray Wagtail'  'Common Wood Pigeon' 'European Goldfinch' 'Great Spotted Woodpecker'</div>`)[0];
+                popup_c5e6b2562f6068a895ea3e83439f49ac.setContent(html_11418d0a8fb4f7465139fe9635dc2787);
+            
+        
+
+        marker_1b1e1abe9616f05cc9ee45b22d711ca6.bindPopup(popup_c5e6b2562f6068a895ea3e83439f49ac)
+        ;
+
+        
+    
+    
+            var marker_1da92e586935e4bbb70865d5de779ec4 = L.marker(
+                [51.507664, -3.253806],
+                {}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+        var popup_e039a7aa59cd15c54cfbd49479de0a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb19ec23938c0c3fca59afc89a197879 = $(`<div id="html_cb19ec23938c0c3fca59afc89a197879" style="width: 100.0%; height: 100.0%;">'House Sparrow' 'Eurasian Blackbird' 'Eurasian Skylark' 'European Robin'  'European Goldfinch'</div>`)[0];
+                popup_e039a7aa59cd15c54cfbd49479de0a8c.setContent(html_cb19ec23938c0c3fca59afc89a197879);
+            
+        
+
+        marker_1da92e586935e4bbb70865d5de779ec4.bindPopup(popup_e039a7aa59cd15c54cfbd49479de0a8c)
+        ;
+
+        
+    
+    
+            var marker_6004e0a60b04b178427ae6882f470b49 = L.marker(
+                [51.520959000000005, -3.244094],
+                {}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+        var popup_2d4040f6723b12af9e7345ce6815789d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66132ddc68a31b0df383bb00ed9ac485 = $(`<div id="html_66132ddc68a31b0df383bb00ed9ac485" style="width: 100.0%; height: 100.0%;">'European Robin' 'European Treecreeoer' 'Eurasian Blackbird'  'Common Chiffchaff' 'Eurasian Wren' 'Eurasian Blackcap'  'Eurasian Blue Tit' 'Dunnock' 'Common Wood Pigeon' 'Song Thrush'  'Coal Tit'</div>`)[0];
+                popup_2d4040f6723b12af9e7345ce6815789d.setContent(html_66132ddc68a31b0df383bb00ed9ac485);
+            
+        
+
+        marker_6004e0a60b04b178427ae6882f470b49.bindPopup(popup_2d4040f6723b12af9e7345ce6815789d)
+        ;
+
+        
+    
+    
+            var marker_ed34c0b0fba7e926bb306e60b411a977 = L.marker(
+                [51.8493565, -5.0835871],
+                {}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+        var popup_56ee065d03f820886984553f55cb2263 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d198abad1cef3fe8301fac2089cc3ace = $(`<div id="html_d198abad1cef3fe8301fac2089cc3ace" style="width: 100.0%; height: 100.0%;">'Common Chiffchaff' 'House Sparrow' 'Common Chaffinch' 'White Wagtail'  'Eurasian Blackbird' 'Eurasian Jackdaw'</div>`)[0];
+                popup_56ee065d03f820886984553f55cb2263.setContent(html_d198abad1cef3fe8301fac2089cc3ace);
+            
+        
+
+        marker_ed34c0b0fba7e926bb306e60b411a977.bindPopup(popup_56ee065d03f820886984553f55cb2263)
+        ;
+
+        
+    
+    
+            var marker_a993404ec974acb5580de2e0738a4ce7 = L.marker(
+                [51.3424655, -0.27534050000000004],
+                {}
+            ).addTo(map_a019f9ccc3a3896cf11e7e2646fa6292);
+        
+    
+        var popup_6f11e9e8c0471d98a1dd0678da1cd2d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3c3ae103882e090ece61aa08df45178 = $(`<div id="html_a3c3ae103882e090ece61aa08df45178" style="width: 100.0%; height: 100.0%;">'European Robin' 'House Sparrow'</div>`)[0];
+                popup_6f11e9e8c0471d98a1dd0678da1cd2d6.setContent(html_a3c3ae103882e090ece61aa08df45178);
+            
+        
+
+        marker_a993404ec974acb5580de2e0738a4ce7.bindPopup(popup_6f11e9e8c0471d98a1dd0678da1cd2d6)
+        ;
+
+        
+    
+</script>
+</html>
